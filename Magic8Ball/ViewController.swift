@@ -31,5 +31,10 @@ class ViewController: UIViewController {
     magicBallImageView.image = UIImage(named: ballArray[randomBallIndex])
   }
   
+  override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?)
+  {
+    updateBallImages()
+  }
+  
 }
 
